@@ -1,34 +1,34 @@
-# Task Management System Technical Specification
+# Технические характеристики системы управления задачами
 
-## Interface Requirements
-- **Main elements**: Task list, task card, statuses, filters.
-- **Design**: Minimalistic, with an emphasis on ease of use.
-- **Mobile version support**: The application should be fully responsive and accessible on mobile devices.
+## Требования к интерфейсу
+- **Основные элементы**: список задач, карточка задач, статусы, фильтры.
+- **Дизайн**: минималистичный, с упором на простоту использования.
+- **Поддержка мобильной версии**: приложение должно быть полностью адаптивным и доступным на мобильных устройствах.
 
-## Architecture and Technology Stack
-- **Stack**:
-  - Frontend: React.js, Tailwind CSS
-  - Backend: Node.js + Express
-  - Database: PostgreSQL
-- **Architecture**: Client-server architecture with REST API for interaction.
-- **User roles**: Implementation of different user roles such as admin, performer, and manager.
+## Архитектура и технологический стек
+- **Стек**:
+- Фронтенд: React.js, Tailwind CSS
+- Бэкенд: Node.js + Express
+- База данных: PostgreSQL
+- **Архитектура**: архитектура клиент-сервер с REST API для взаимодействия.
+- **Роли пользователей**: реализация различных ролей пользователей, таких как администратор, исполнитель и менеджер.
 
-## Performance and Security Requirements
-- **Maximum load**: The system should support up to 500 active users simultaneously.
-- **API protection**: Use JWT tokens for authentication and enable CORS.
-- **Database security**: Encrypt sensitive data stored in the database.
+## Требования к производительности и безопасности
+- **Максимальная нагрузка**: система должна поддерживать до 500 активных пользователей одновременно.
+- **Защита API**: использование токенов JWT для аутентификации и включение CORS.
+- **Безопасность базы данных**: шифруйте конфиденциальные данные, хранящиеся в базе данных.
 
-## Interaction with External Systems
-- **Integration with Telegram**: Use a Telegram bot for notifications.
-- **OAuth connection**: Enable OAuth login with Google and GitHub.
-- **Data export**: Allow users to export data to CSV and PDF formats.
+## Взаимодействие с внешними системами
+- **Интеграция с Telegram**: используйте бота Telegram для уведомлений.
+- **Подключение OAuth**: включите вход OAuth с Google и GitHub.
+- **Экспорт данных**: разрешите пользователям экспортировать данные в форматы CSV и PDF.
 
-## Limitations and Risks
-- **Third-party API limitations**: Be aware of the limitations of the Telegram Bot API.
-- **Database delays**: Possible delays when querying the database.
-- **Browser compatibility**: Ensure the application works across major browsers.
+## Ограничения и риски
+- **Ограничения сторонних API**: помните об ограничениях API бота Telegram.
+- **Задержки базы данных**: возможные задержки при запросе базы данных.
+- **Совместимость с браузерами**: убедитесь, что приложение работает во всех основных браузерах.
 
-## Project Success Criteria
-- **Functionality**: The system should fully comply with the technical requirements.
-- **User feedback**: Aim for user reviews with at least 4/5 stars.
-- **Stability**: The system should remain stable under high load conditions.
+## Критерии успешности проекта
+- **Функциональность**: система должна полностью соответствовать техническим требованиям.
+- **Отзывы пользователей**: стремитесь к отзывам пользователей с оценкой не менее 4/5 звезд.
+- **Стабильность**: система должна оставаться стабильной в условиях высокой нагрузки.
